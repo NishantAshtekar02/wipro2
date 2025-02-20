@@ -29,5 +29,13 @@ pipeline{
         }
       }
     }
+      post{
+        success{
+          echo 'Deployment successful'
+        }
+        failure{
+          echo 'deployment failed'
+        }
+      }     
 }
 
