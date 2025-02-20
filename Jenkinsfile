@@ -22,7 +22,7 @@ pipeline{
       }
 
       stage('Restart apache'){
-        step{
+        steps{
           srcipt{
             sh 'sudo systemctl restart apache2'
           }
